@@ -1,27 +1,41 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,jsx}"],
-  mode: "jit",
+  mode: 'jit',
+  darkMode: 'class',
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  purge: "./src/**/*.{js,jsx,ts,tsx}",
   theme: {
     extend: {
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
+      container: {
+        center: true,
+      },
       colors: {
-        primary: "#00040f",
-        secondary: "#00f6ff",
-        dimWhite: "rgba(255, 255, 255, 0.7)",
-        dimBlue: "rgba(9, 151, 124, 0.1)",
-      },
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-      },
-    },
-    screens: {
-      xs: "480px",
-      ss: "620px",
-      sm: "768px",
-      md: "1060px",
-      lg: "1200px",
-      xl: "1700px",
+        bg: {
+          DEFAULT: '#f8f9ff',
+          card: '#f1f3fa'
+        },
+        darkbg: {
+          DEFAULT: '#20222f',
+          card: '#252643',
+          dark: '#1d2029'
+        },
+        facebook: '#1877f2',
+        twitter: '#1da1f2',
+        youtube: '#ff0000',
+        instgram: '#c32aa3',
+        maingreen: '#3fac8e'
+
+      }
     },
   },
   plugins: [],
-};
+}
