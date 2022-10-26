@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tic-tac-tec-deploy/static/css/main.f56197f8.css",
+    "main.js": "/tic-tac-tec-deploy/static/js/main.036dfb0c.js",
+    "index.html": "/tic-tac-tec-deploy/index.html",
+    "main.f56197f8.css.map": "/tic-tac-tec-deploy/static/css/main.f56197f8.css.map",
+    "main.036dfb0c.js.map": "/tic-tac-tec-deploy/static/js/main.036dfb0c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f56197f8.css",
+    "static/js/main.036dfb0c.js"
+  ]
+}
